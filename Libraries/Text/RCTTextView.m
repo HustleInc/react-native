@@ -180,6 +180,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
     _textView.selectedTextRange = [_textView textRangeFromPosition:position toPosition:position];
   }
 
+  [self updateContentSize];
   [_textView layoutIfNeeded];
 
   [self _setPlaceholderVisibility];
